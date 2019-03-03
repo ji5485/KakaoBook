@@ -1,0 +1,201 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans KR';
+}
+
+.Header {
+	height: 60px;
+}
+
+.background {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -2;
+	background-image: url('../image/Carousel-Image (4).jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.dimmer {
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.7;
+	position: fixed;
+	z-index: -1;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f8f9fa;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #868e96;
+	border-radius: 4px;
+}
+
+::-webkit-input-placeholder {
+	color: #f8f9fa;
+}
+
+.Footer {
+	position: fixed;
+	bottom: 0;
+}
+
+.Container {
+	width: 850px;
+	height: 500px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+.kakaostory-select div {
+	width: 100%;
+	height: 10%;
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+.kakaostory-select {
+	height: 100%;
+	width: 300px;
+}
+
+.kakaostory-select select {
+	width: 100%;
+	height: 90%;
+	border: 1px solid white;
+	outline: none;
+	overflow: auto;
+	background: transparent;
+	color: white;
+}
+
+.kakaostory-select select option {
+	padding: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+option:checked, option:hover {
+	color: black;
+	background: white;
+}
+
+.kakaostory-share {
+	width: 500px;
+	display: flex;
+	align-items: center;
+}
+
+.kakaostory-share div {
+	width: 100%;
+}
+
+.kakaostory-title {
+	font-size: 3rem;
+	font-weight: 100;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.kakaostory-content {
+	width: 100%;
+	height: 200px;
+	outline: none;
+	margin-top: 40px;
+}
+
+.kakaostory-content textarea {
+	width: 100%;
+	height: 80%;
+	padding: 10px;
+	outline: none;
+	border: 1px solid lightgrey;
+	margin-top: 10px;
+	resize: none;
+	transition: .5s all;
+	background: transparent;
+	color: white;
+}
+
+.kakaostory-content textarea:focus {
+	background: #1D1D1D;
+}
+
+.kakaostory-content span {
+	font-weight: 300;
+	font-size: 1.2rem;
+}
+
+.kakaostory-button {
+	margin-top: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.kakaostory-button button {
+	padding: 10px;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	background-color: #FBCE00;
+	text-decoration: none;
+	color: #1D1D1D;
+	font-weight: 600;
+	font-size: 1.1rem;
+	cursor: pointer;
+	transition: .3s all;
+	outline: none;
+}
+
+.kakaostory-button button:active {
+	outline: none;
+}
+
+.kakaostory-button button:hover {
+	color: #FBCE00;
+	background-color: #1D1D1D;
+	text-decoration: none;
+}
+
+.listNull {
+	width: 100%;
+	height: 90% !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem !important;
+	font-weight: 200;
+}
+
+.alert {
+	position: absolute !important;
+	top: 80px;
+	right: 20px;
+	z-index: 100;
+	width: 300px;
+}
+
+.alert-dismissible .close {
+	padding: 0 !important;
+	width: 50px;
+	height: 100%;
+}

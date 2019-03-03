@@ -1,0 +1,270 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.Footer {
+	position: relative !important;
+}
+
+.Header {
+	margin-top: 0 !important;
+	transition: .4s all;
+	height: 70px;
+}
+
+.dropdownMenu {
+	background: #1D1D1D !important;
+}
+
+.background {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -2;
+	background-image: url('../image/Carousel-Image (3).jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.dimmer {
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.7;
+	position: fixed;
+	z-index: -1;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f8f9fa;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #868e96;
+	border-radius: 4px;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 150px;
+}
+
+.item {
+	width: 330px;
+	margin-bottom: 30px;
+	border: 1px solid white;
+	color: white;
+	transition: .3s all;
+}
+
+.item:hover .item-title {
+	text-decoration: underline;
+	cursor: default;
+}
+
+.item-upward {
+	padding: 15px;
+}
+
+.item-title {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.item-blogInfo {
+	display: flex;
+	justify-content: space-between;
+	font-size: 13px;
+	font-weight: 500;
+	color: #c9cccf;
+	margin-bottom: 10px;
+}
+
+.item-blogInfo-blogger {
+	width: 60%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.item-description {
+	white-space: normal;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	word-wrap: break-word;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	line-height: 1.7;
+	font-weight: 300;
+	height: 106px;
+}
+
+.item-function {
+	border-top: 1px solid #ced4da;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 1rem;
+}
+
+.item-function div {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.item-function div:nth-child(1) {
+	border-right: 1px solid #ced4da;
+}
+
+.itemContainer {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/**********************************************************************/
+
+.formContainer {
+	position: fixed;
+	width: 100%;
+	background: transparent;
+	color: white;
+	top: 70px;
+	height: 50px;
+	border: 1px solid white;
+	border-right: none;
+	border-left: none;
+	z-index: 40;
+	transition: .4s all;
+}
+
+.formContainer-Middle {
+	width: 700px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.formContainer form {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.formContainer select {
+	height: 100%;
+	border: none;
+	outline: none;
+	font-size: 0.9rem;
+	font-weight: 500;
+	cursor: pointer;
+	color: white;
+	background: transparent;
+}
+
+.formContainer input[type=text] {
+	height: 100%;
+	width: 500px;
+	border: 1px solid #DBE8F1;
+	border-top: none;
+	border-bottom: none;
+	outline: none;
+	text-indent: 15px;
+	font-size: 0.95rem;
+	font-weight: 500;
+	color: white;
+	background: transparent;
+}
+
+.formContainer button[type=submit] {
+	width: 50px;
+	background: none;
+	border: none;
+	border-top: none;
+	border-bottom: none;
+	outline: none;
+	font-size: 1.2rem;
+	color: #c1c6ca;
+	cursor: pointer;
+	transition: .3s all;
+	display: flex;
+}
+
+.formContainer button[type=submit]:hover {
+	color: white;
+}
+
+/**********************************************************************/
+
+.pagingContainer {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.pagingContainer-Middle {
+	display: flex;
+	justify-content: center;	
+}
+
+.paging {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	transition: .1s all;
+	border: 0.5px solid white;
+	border-right: none;
+}
+
+.paging:last-child {
+	border-right: 0.5px solid white;
+}
+
+.paging:hover {
+	text-decoration: none;
+	color: black;
+	background: white;
+}
+
+.alert {
+	position: absolute !important;
+	top: 80px;
+	right: 20px;
+	z-index: 100;
+	width: 300px;
+}
+
+.alert-dismissible .close {
+	padding: 0 !important;
+	width: 50px;
+	height: 100%;
+}

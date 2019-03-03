@@ -1,0 +1,115 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans KR';
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.Header {
+	height: 60px;
+}
+
+.background {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -2;
+	background-image: url('../image/Carousel-Image (1).jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.dimmer {
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.7;
+	position: fixed;
+	z-index: -1;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f8f9fa;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #868e96;
+	border-radius: 4px;
+}
+
+.scrap-container {
+	width: 900px;
+	margin: 0 auto;
+	padding-top: 120px;
+	color: white;
+	padding-bottom: 80px;
+}
+
+.user {
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+.Footer {
+	position: fixed;
+	bottom: 0;
+}
+
+.scrap-list {
+	margin-top: 30px;
+	margin-bottom: 90px;
+	border: 2px solid white;
+	border-right: none;
+	border-left: none;
+}
+
+table thead tr {
+	border-bottom: 2px solid white;
+	font-size: 1.2rem;
+	height: 60px;
+}
+
+table tr {
+	height: 50px;
+	text-align: center;
+}
+
+table tbody tr {
+	transition: .3s all;
+}
+
+table tbody tr td:nth-child(1) {
+	cursor: pointer;
+}
+
+table tbody tr td:nth-child(1):hover {
+	text-decoration: underline;
+}
+
+.remove {
+	cursor: pointer;
+}
+
+.alert {
+	position: absolute !important;
+	top: 80px;
+	right: 20px;
+	z-index: 100;
+	width: 300px;
+}
+
+.alert-dismissible .close {
+	padding: 0 !important;
+	width: 50px;
+	height: 100%;
+}

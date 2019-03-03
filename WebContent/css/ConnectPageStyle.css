@@ -1,0 +1,164 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+	color: white;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.Header {
+	height: 60px;
+}
+
+.background {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -2;
+	background-image: url('../image/Carousel-Image (2).jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.dimmer {
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.7;
+	position: fixed;
+	z-index: -1;
+}
+
+.Container {
+	width: 900px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.inner-box1, .inner-box2 {
+	width: 400px;
+}
+
+.logo {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.title {
+	color: #1D1D1D;
+	font-weight: lighter;
+	font-size: 1.7rem;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 120%;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+}
+
+.title-text {
+	margin-left: 20px;
+	justify-content: flex-start;
+	text-align: left;
+	color: white;
+}
+
+.box1-content {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.box1-mini-title {
+	font-weight: 500;
+	font-size: 1.1rem;
+	margin-bottom: 5px;
+}
+
+.box1-mini-content {
+	font-weight: 300;
+	font-size: 1rem;	
+	text-indent: 10px;
+}
+
+/****************************************************************/
+
+.form {
+	width: 350px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.form input, .form select {
+	width: 100%;
+	height: 45px;
+	margin-bottom: 30px;
+	outline: none;
+	font-weight: 400;
+	font-size: 1.1rem;
+	text-indent: 15px;
+	transition: .3s all;
+	border: 1px solid white;
+	background: transparent;
+	color: white;
+	border-radius: 5px;
+}
+
+.form select option {
+	color: black;
+}
+
+.form button {
+	width: 100%;
+	height: 50px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	background-color: #FBCE00;
+	color: #1D1D1D;
+	font-weight: 600;
+	font-size: 1.1rem;
+	cursor: pointer;
+	transition: .3s all;
+}
+
+.form button:hover {
+	color: #FBCE00;
+	background-color: #1D1D1D;
+}
+
+.alert {
+	position: absolute !important;
+	top: 80px;
+	right: 20px;
+	z-index: 100;
+	width: 300px;
+}
+
+.alert-dismissible .close {
+	padding: 0 !important;
+	width: 50px;
+	height: 100%;
+}
